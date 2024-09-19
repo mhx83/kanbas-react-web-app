@@ -12,6 +12,7 @@ This project is a React.js-based web application that implements an Online Learn
 
 ## Project Structure
 
+```
 .
 ├── node_modules
 ├── public
@@ -26,3 +27,4 @@ This project is a React.js-based web application that implements an Online Learn
 │   │   │   ├── Home
 │   │   │   └── Modules
 └── └── Labs
+```
