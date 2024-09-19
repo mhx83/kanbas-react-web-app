@@ -59,11 +59,3 @@ The app will start running at http://localhost:3000.
 
 ### Deployment
 This project is configured to be deployed on platforms such as Netlify or Render. Follow the respective documentation to connect your GitHub repository and deploy the application.
-
-Branching Strategy
-Each assignment is submitted in its own branch:
-a1: Assignment 1
-a2: Assignment 2
-a3: Assignment 3
-a4: Assignment 4
-a5: Assignment 5
