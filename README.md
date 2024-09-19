@@ -12,4 +12,16 @@ This project is a React.js-based web application that implements an Online Learn
 
 ## Project Structure
 
-. ├── src │ ├── Labs │ │ ├── Lab1 │ │ ├── Lab2 │ │ └── Lab3 │ ├── Kanbas │ │ ├── Account │ │ ├── Courses │ │ ├── Dashboard │ │ └── Navigation │ ├── App.tsx │ ├── index.tsx │ └── ... ├── public │ └── index.html └── README.md
+├── node_modules
+├── public
+│   ├── benchmarks
+│   ├── integration
+│   └── images
+├── src
+│   ├── Kanbas
+│   │   ├── Account
+│   │   └── Courses
+│   │   │   ├── Assignments
+│   │   │   ├── Home
+│   │   │   └── Modules
+└── └── Labs
