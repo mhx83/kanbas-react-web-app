@@ -16,8 +16,6 @@ This project is a React.js-based web application that implements an Online Learn
 .
 ├── node_modules
 ├── public
-│   ├── benchmarks
-│   ├── integration
 │   └── images
 ├── src
 │   ├── Kanbas
@@ -28,3 +26,45 @@ This project is a React.js-based web application that implements an Online Learn
 │   │   │   └── Modules
 └── └── Labs
 ```
+
+
+## Getting Started
+
+To run this project locally, follow these steps:
+
+### Prerequisites
+
+- Node.js (https://nodejs.org/)
+- npm (Node package manager)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/kanbas-react-web-app.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd kanbas-react-web-app
+   Install the dependencies:
+
+bash
+复制代码
+npm install
+Start the application:
+
+bash
+复制代码
+npm start
+The app will start running at http://localhost:3000.
+
+Deployment
+This project is configured to be deployed on platforms such as Netlify or Render. Follow the respective documentation to connect your GitHub repository and deploy the application.
+
+Branching Strategy
+Each assignment is submitted in its own branch:
+a1: Assignment 1
+a2: Assignment 2
+a3: Assignment 3
+a4: Assignment 4
+a5: Assignment 5
