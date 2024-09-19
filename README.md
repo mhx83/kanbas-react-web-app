@@ -58,6 +58,7 @@ To run this project locally, follow these steps:
 The app will start running at http://localhost:3000.
 
 ### Deployment
+
 This project is configured to be deployed on platforms such as Netlify or Render. Follow the respective documentation to connect your GitHub repository and deploy the application.
 
 ## License
