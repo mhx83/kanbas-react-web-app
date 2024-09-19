@@ -46,19 +46,18 @@ To run this project locally, follow these steps:
 2. Navigate to the project directory:
    ```bash
    cd kanbas-react-web-app
-   Install the dependencies:
 
-bash
-复制代码
-npm install
-Start the application:
+3. Install the dependencies:
+   ```bash
+   npm install
 
-bash
-复制代码
-npm start
+4. Start the application:
+   ```bash
+   npm start
+
 The app will start running at http://localhost:3000.
 
-Deployment
+### Deployment
 This project is configured to be deployed on platforms such as Netlify or Render. Follow the respective documentation to connect your GitHub repository and deploy the application.
 
 Branching Strategy
