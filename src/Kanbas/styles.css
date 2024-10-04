@@ -67,3 +67,11 @@ body * {
     border-radius: 5px;
     border: 1px solid lightgray;
 }
+
+#wd-modules, #wd-modules-controls {
+    max-width: 800px;
+    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+}
