@@ -42,7 +42,7 @@ export default function Lab3() {
             <BooleanVariables />
             <IfElse />
             <TernaryOperator />
-            <ConditionalOutputIfElse />
+{/*             <ConditionalOutputIfElse /> */}
             <ConditionalOutputInline />
             <LegacyFunctions />
             <ArrowFunctions />
