@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import { FaCaretDown, FaCaretRight } from "react-icons/fa6";
 import { BsGripVertical } from "react-icons/bs";
 import { assignments } from "../../Database"
+import { useSelector } from "react-redux";
 
 import AssignmentsControls from "./AssignmentsControls";
 import AssignmentsPercentage from "./AssignmentsPercentage";
@@ -11,6 +12,9 @@ import AssignmentControlButtons from "./AssignmentControlButtons";
 
 export default function Assignments() {
     const { cid } = useParams();
+    const { assignments } = useSelector((state: any) => state.assignmentsReducer);
+    const { currentUser } = useSelector((state: any) => state.accountReducer);
+
     const [isCollapsed, setIsCollapsed] = useState(false);
 
     const toggleCollapse = () => {
@@ -19,10 +23,11 @@ export default function Assignments() {
 
     return (
         <div id="wd-assignments">
-            <div>
-                <AssignmentsControls />
-            </div>
-
+            {currentUser.role === "FACULTY" &&
+                <div>
+                    <AssignmentsControls />
+                </div>
+            }
             <ul id="wd-assignment-list" className="list-group rounded-0 fs-5">
                 <div className="wd-assignments-title wd-title p-3 ps-2 bg-secondary d-flex align-items-center">
                     <BsGripVertical className="me-2 fs-3" />
@@ -30,15 +35,17 @@ export default function Assignments() {
                         {isCollapsed ? <FaCaretRight className="me-2" /> : <FaCaretDown className="me-2" />}
                     </button>
                     ASSIGNMENTS
-                    <div className="ms-auto">
-                        <AssignmentsPercentage />
-                    </div>
+                    {currentUser.role === "FACULTY" &&
+                        <div className="ms-auto">
+                            <AssignmentsPercentage />
+                        </div>
+                    }
                 </div>
 
                 {!isCollapsed && assignments.filter((assignment: any) => assignment.course === cid)
                     .map((assignment: any) => (
                         <li className="wd-assignment-list-item list-group-item p-3 ps-1 d-flex align-items-center">
-                            <AssignmentEditButtons />
+                            {currentUser.role === "FACULTY" && <AssignmentEditButtons /> }
                             <div>
                                 {/* Assignment Title Link */}
                                 <a className="wd-assignment-link"
@@ -48,12 +55,12 @@ export default function Assignments() {
                                 {/* Assignment Details */}
                                 <div className="wd-assignment-details">
                                     <span className="text-danger">Multiple Modules</span> |
-                                    <strong className="ms-2">Not available until</strong> May 6 at 12:00am |
+                                    <strong className="ms-2">Not available until</strong> {assignment.available_from} at 12:00am |
                                     <br />
-                                    <strong>Due</strong> May 13 at 11:59pm | 100 pts
+                                    <strong>Due </strong>{assignment.due_date} at 11:59pm |&nbsp; {assignment.points} pts
                                 </div>
                             </div>
-                            <AssignmentControlButtons />
+                            {currentUser.role === "FACULTY" &&<AssignmentControlButtons assignmentID={assignment._id} />}
                         </li>
                     ))}
             </ul>
