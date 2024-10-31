@@ -53,7 +53,7 @@ export default function Dashboard({
             {currentUser.role === "FACULTY" && (
                 <div>
                     <h5>New Course
-                        <button className="btn btn-primary float-end" onClick={createCourse}>Add</button>
+                        <button className="btn btn-primary float-end mb-3" onClick={createCourse}>Add</button>
                         <button className="btn btn-warning float-end me-2" onClick={updateCourse}>Update</button>
                     </h5>
                     <input value={course.name} className="form-control mb-2" onChange={(e) => setCourse({ ...course, name: e.target.value })} />
