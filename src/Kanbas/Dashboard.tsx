@@ -53,11 +53,12 @@ export default function Dashboard({
             {currentUser.role === "FACULTY" && (
                 <div>
                     <h5>New Course
-                        <button className="btn btn-primary float-end mb-3" onClick={createCourse}>Add</button>
+                        <button className="btn btn-primary float-end mb-3" onClick={addNewCourse}>Add</button>
                         <button className="btn btn-warning float-end me-2" onClick={updateCourse}>Update</button>
                     </h5>
                     <input value={course.name} className="form-control mb-2" onChange={(e) => setCourse({ ...course, name: e.target.value })} />
                     <textarea value={course.description} className="form-control" onChange={(e) => setCourse({ ...course, description: e.target.value })} /><hr />
+                    <br /><br />
                 </div>
             )}
 
@@ -114,6 +115,25 @@ export default function Dashboard({
                                                     // Show Go button (Hide Unenroll)
                                                     <button className="btn btn-primary">Go</button>
                                                 )}
+                                            </div>
+                                        )}
+                                        {currentUser.role === "FACULTY" && (
+                                            <div className="d-flex justify-content-between mt-3">
+                                                <button className="btn btn-primary">Go</button>
+                                                <div>
+                                                    <button
+                                                        className="btn btn-warning me-2"
+                                                        onClick={(event) => {
+                                                            event.preventDefault();
+                                                            setCourse(course);  // Set course for editing
+                                                        }}>Edit</button>
+                                                    <button
+                                                        className="btn btn-danger"
+                                                        onClick={(event) => {
+                                                            event.preventDefault();
+                                                            deleteCourse(course._id);  // Delete course function
+                                                        }}>Delete</button>
+                                                </div>
                                             </div>
                                         )}
                                     </div>
