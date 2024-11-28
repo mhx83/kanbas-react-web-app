@@ -1,23 +1,23 @@
 import "./index.css";
-import ForegroundColors from './ForegroundColors';
-import Borders from './Borders';
-import Padding from './Padding';
-import Margins from './Margins';
-import Corners from './Corners';
-import Dimensions from './Dimensions';
-import Positions from './Positions';
-import Zindex from './Zindex';
-import Float from './Float';
-import GridLayout from './GridLayout';
-import Flex from './Flex';
-import ReactIconsSampler from './ReactIcons';
-import BootstrapGrids from './BootstrapGrids';
-import ScreenSizeLabel from './ScreenSizeLabel';
-import BootstrapTables from './BootstrapTables';
-import BootstrapLists from './BootstrapLists';
-import BootstrapForms from './BootstrapForms';
-import BootstrapNavigation from './BootstrapNavigation';
-
+import ReactIconsSampler from "./ReactIcons";
+import Flex from "./Flex";
+import GridLayout from "./GridLayout";
+import Float from "./Float";
+import Zindex from "./Zindex";
+import Positions from "./Positions";
+import Dimensions from "./Dimensions";
+import Margins from "./Margins";
+import Padding from "./Padding";
+import Border from "./Border";
+import BackgroundColors from "./BackgroundColors";
+import ForegroundColors from "./ForegroundColors";
+import BootstrapGrids from "./BootstrapGrids";
+import ScreenSizeLabel from "./ScreenSizeLabel";
+import BootstrapTables from "./BootstrapTables";
+import BootstrapLists from "./BootstrapLists";
+import BootstrapForms from "./BootstrapForms";
+import BootstrapNavigation from "./BootstrapNavigation";
+import TOC from "./TOC";
 
 export default function Lab2() {
   return (
@@ -30,7 +30,8 @@ export default function Lab2() {
         it is considered bad practice and you should avoid
         using the style attribute
       </p>
-      
+
+
       <div id="wd-css-id-selectors">
         <h3>ID selectors</h3>
         <p id="wd-id-selector-1">
@@ -42,7 +43,8 @@ export default function Lab2() {
           feel
         </p>
       </div>
-      
+
+
       <div id="wd-css-class-selectors">
         <h3>Class selectors</h3>
         <p className="wd-class-selector">
@@ -52,7 +54,8 @@ export default function Lab2() {
           This heading has same style as paragraph above
         </h4>
       </div>
-      
+
+
       <div id="wd-css-document-structure">
         <div className="wd-selector-1">
           <h3>Document structure selectors</h3>
@@ -60,12 +63,13 @@ export default function Lab2() {
             Selectors can be combined to refer elements in particular
             places in the document
             <p className="wd-selector-3">
-              This paragraph's red background is referenced as <br />
-              .selector-2 .selector3<br />
-              meaning the descendant of some ancestor.<br />
+              This paragraph's red background is referenced as
+              <br/>
+              .selector-2 .selector3<br/>
+              meaning the descendant of some ancestor.<br/>
               <span className="wd-selector-4">
-                Whereas this span is a direct child of its parent
-              </span><br />
+          Whereas this span is a direct child of its parent
+        </span><br/>
               You can combine these relationships to create specific
               styles depending on the document structure
             </p>
@@ -73,27 +77,28 @@ export default function Lab2() {
         </div>
       </div>
 
-      <ForegroundColors />
-      <Borders />
-      <Padding />
-      <Margins />
-      <Corners />
-      <Dimensions />
-      <Positions />
-      <Zindex />
-      <Float />
-      <GridLayout />
-      <Flex />
-      <ReactIconsSampler />
-      <BootstrapGrids />
-      <ScreenSizeLabel />
-      <BootstrapTables />
-      <BootstrapLists />
-      <BootstrapForms />
-      <BootstrapNavigation />
 
-      
-      
+
+      <div><ForegroundColors/></div>
+      <div><BackgroundColors/></div>
+      <div><Border/></div>
+      <div><Padding/></div>
+      <div><Margins/></div>
+      <div><Dimensions/></div>
+      <div><Positions/></div>
+      <div><Zindex/></div>
+      <div><Float/></div>
+      <div><GridLayout/></div>
+      <div><Flex/></div>
+      <div><ReactIconsSampler/></div>
+
+      <div><BootstrapGrids/></div>
+      <div><ScreenSizeLabel/></div>
+      <div><BootstrapTables/></div>
+      <div><BootstrapLists/></div>
+      <div><BootstrapForms/></div>
+      <div><BootstrapNavigation/></div>
+      <div><TOC/></div>
 
     </div>
   );

@@ -1,6 +1,6 @@
 export default function ChildStateComponent({ counter, setCounter }:
-{ counter: number;
-  setCounter: (counter: number) => void;}) {
+                                              { counter: number;
+                                                setCounter: (counter: number) => void;}) {
   return (
     <div id="wd-child-state">
       <h3>Counter {counter}</h3>
@@ -10,4 +10,4 @@ export default function ChildStateComponent({ counter, setCounter }:
         Decrement</button>
       <hr/>
     </div>
-);}
+  );}

@@ -10,5 +10,5 @@ export default function BooleanStateVariables() {
                onChange={() => setDone(!done)} /> Done
       </label>
       {done && <div className="alert alert-success">
-               Yay! you are done</div>}
-<hr/></div>);}
+        Yay! you are done</div>}
+      <hr/></div>);}

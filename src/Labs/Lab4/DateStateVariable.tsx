@@ -17,4 +17,4 @@ export default function DateStateVariable() {
         defaultValue={dateObjectToHtmlDateString(startDate)}
         onChange={(e) => setStartDate(new Date(e.target.value))}
       />
-<hr/></div>);}
+      <hr/></div>);}

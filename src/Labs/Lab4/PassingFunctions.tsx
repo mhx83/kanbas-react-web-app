@@ -1,5 +1,7 @@
 export default function PassingFunctions(
- { theFunction }: { theFunction: () => void }) {
+  { theFunction }: { theFunction: () => void }) {
+  // Passing a Function with Arguments
+  // { theFunction }: { theFunction: (arg1: string, arg2: number) => void }
   return (
     <div>
       <h2>Passing Functions</h2>
@@ -8,4 +10,4 @@ export default function PassingFunctions(
       </button>
       <hr/>
     </div>
-);}
+  );}

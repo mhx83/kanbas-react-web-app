@@ -1,110 +1,84 @@
-/*p {
- background-color: blue;
- color: white;}*/
+/*tag selector*/
+/*p {*/
+/*    background-color: blue;*/
+/*    color: white;*/
+/*}*/
 
+/*id selector*/
 p#wd-id-selector-1 {
     background-color: red;
     color: white;
 }
-
 p#wd-id-selector-2 {
     background-color: yellow;
     color: black;
 }
 
+/*class selector*/
 .wd-class-selector {
     background-color: yellow;
     color: blue;
 }
 
+/*structure selector*/
 .wd-selector-1 .wd-selector-3 {
     background-color: red;
     color: white;
 }
-
-.wd-selector-2>.wd-selector-3>.wd-selector-4 {
+.wd-selector-2 > .wd-selector-3 > .wd-selector-4 {
     background-color: yellow;
     color: blue;
 }
 
-.wd-fg-color-black {
-    color: black;
-}
+/*Styling the foreground color*/
+.wd-fg-color-black { color: black; }
+.wd-fg-color-white { color: white; }
+.wd-fg-color-blue { color: #7070ff; }
+.wd-fg-color-red { color: #ff7070; }
+.wd-fg-color-green { color: green; }
 
-.wd-fg-color-white {
-    color: white;
-}
-
-.wd-fg-color-blue {
-    color: #7070ff;
-}
-
-.wd-fg-color-red {
-    color: #ff7070;
-}
-
-.wd-fg-color-green {
-    color: green;
-}
-
+/*Styling the background color*/
 .wd-bg-color-yellow {
     background-color: #ffff07;
 }
-
 .wd-bg-color-blue {
     background-color: #7070ff;
 }
-
 .wd-bg-color-red {
     background-color: #ff7070;
 }
-
 .wd-bg-color-green {
     background-color: green;
 }
-
 .wd-bg-color-gray {
     background-color: lightgray;
 }
 
+/*Styling borders*/
 .wd-border-fat {
-    border-width: 20px 30px 20px 30px;
-}
-
+    border-width: 20px 30px 20px 30px; }
 .wd-border-thin {
-    border-width: 4px;
-}
-
+    border-width: 4px; }
 .wd-border-solid {
-    border-style: solid;
-}
-
+    border-style: solid; }
 .wd-border-dashed {
-    border-style: dashed;
-}
-
+    border-style: dashed; }
 .wd-border-yellow {
-    border-color: #ffff07;
-}
-
+    border-color: #ffff07; }
 .wd-border-red {
-    border-color: #ff7070;
-}
-
+    border-color: #ff7070; }
 .wd-border-blue {
-    border-color: #7070ff;
-}
+    border-color: #7070ff; }
 
+/*Styling margins and paddings*/
 .wd-padded-top-left {
     padding-top: 50px;
     padding-left: 50px;
 }
-
 .wd-padded-bottom-right {
     padding-bottom: 50px;
     padding-right: 50px;
 }
-
 .wd-padding-fat {
     padding: 50px;
 }
@@ -122,11 +96,11 @@ p#wd-id-selector-2 {
     margin: 30px;
 }
 
+{/*Styling corners*/}
 .wd-rounded-corners-top {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
-
 .wd-rounded-corners-bottom {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -140,6 +114,8 @@ p#wd-id-selector-2 {
     border-radius: 30px 0px 20px 50px;
 }
 
+
+/*Styling dimensions*/
 .wd-dimension-portrait {
     width: 75px;
     height: 100px;
@@ -155,65 +131,51 @@ p#wd-id-selector-2 {
     height: 75px;
 }
 
-.wd-dimension-portrait {
-    width: 75px;
-    height: 100px;
-}
-
-.wd-dimension-landscape {
-    width: 100px;
-    height: 75px;
-}
-
-.wd-dimension-square {
-    width: 75px;
-    height: 75px;
-}
-
+/*Styling relative position*/
 .wd-pos-relative-nudge-up-right {
     position: relative;
     bottom: 30px;
     left: 30px;
 }
-
 .wd-pos-relative-nudge-down-right {
     position: relative;
     top: 20px;
     left: 20px;
 }
-
 .wd-pos-relative {
     position: relative;
 }
 
+/*Styling absolute position*/
 .wd-pos-absolute-10-10 {
     position: absolute;
     top: 10px;
     left: 10px;
 }
-
 .wd-pos-absolute-50-50 {
     position: absolute;
     top: 50px;
     left: 50px;
 }
-
 .wd-pos-absolute-120-20 {
     position: absolute;
     top: 20px;
     left: 120px;
 }
 
+/*Styling fixed position*/
 .wd-pos-fixed {
     position: fixed;
     right: 0px;
     bottom: 50%;
 }
 
+/*Styling z-index*/
 .wd-zindex-bring-to-front {
     z-index: 10;
 }
 
+/*Floating Images and Content*/
 .wd-float-left {
     float: left;
 }
@@ -227,6 +189,7 @@ p#wd-id-selector-2 {
     clear: both;
 }
 
+/*Laying out content in a grid*/
 .wd-grid-row {
     clear: both;
 }
@@ -261,18 +224,18 @@ p#wd-id-selector-2 {
     float: left;
 }
 
+/*Flex*/
 .wd-flex-row-container {
     display: flex;
     flex-direction: row;
 }
-
 .wd-flex-grow-1 {
     flex-grow: 1;
 }
-
 .wd-width-75px {
     width: 75px;
 }
+
 
 #wd-screen-size-label {
     position: fixed;
@@ -286,3 +249,8 @@ p#wd-id-selector-2 {
     width: 220px;
     text-align: center;
 }
+
+
+
+
+

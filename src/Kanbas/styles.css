@@ -1,77 +1,71 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-body * {
-    font-family: Arial, Helvetica, sans-serif;
-}
+body   {  margin: 0;  padding: 0;  }
+body * {  font-family: Arial, Helvetica, sans-serif;  }
 
 @media (min-width: 768px) {
-    #wd-kanbas .wd-main-content-offset {
-        padding-left: 140px !important;
-    }
+  #wd-kanbas .wd-main-content-offset {
+    /* Avoid the main content being overlapped with the navigation bar*/
+    padding-left: 140px !important;
+  }
+}
+.wd-dashboard-course-title {
+  font-size: large;
+  color: darkblue;
+}
+.wd-dashboard-course .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures that the content is spaced */
+  min-height: 180px;
 }
 
-.list-group.wd>.list-group-item.active {
-    color: black;
-    background-color: white;
-    border-left: 3px solid black !important;
+.list-group.wd > .list-group-item.active {
+  color: black;
+  background-color: white;
+  border-left: 3px solid black !important;
 }
 
 .btn-secondary {
-    --bs-btn-color: #000 !important;
-    --bs-btn-bg: #c7cdd1 !important;
-    --bs-btn-border-color: #c7cdd1 !important;
-    --bs-btn-hover-color: #fff !important;
+  --bs-btn-color: #000 !important;
+  --bs-btn-bg: #c7cdd1 !important;
+  --bs-btn-border-color: #c7cdd1 !important;
+  --bs-btn-hover-color: #fff !important;
 }
-
 .bg-secondary {
-    --bs-secondary-rgb: 199, 205, 209;
+  --bs-secondary-rgb: 199, 205, 209;
 }
-
 .list-group-item {
-    --bs-list-group-border-color: gray;
+  --bs-list-group-border-color: gray;
 }
-
 .wd-lesson {
-    border-left: 3px solid green !important;
+  border-left: 3px solid green !important;
 }
-
 .search-input {
-    padding-left: 0px !important;
-    border-left: none !important;
+  padding-left: 0px; /* Adds space so the text doesn't overlap the icon */
+  border-left: none;
 }
-
 .percentage-button {
-    border: 1px solid gray !important;
-    border-radius: 50px !important;
-    padding: 5px 15px !important;
-    font-size: 16px !important;
-    color: black !important;
+  border: 1px solid gray;
+  border-radius: 50px; /* To make the element pill-shaped */
+  padding: 5px 15px; /* Padding to give the button some space */
+  font-size: 16px; /* Font size for the text */
+  color: black;
 }
-
 .wd-assignment-link {
-    font-size: 1.25rem;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline from the link */
 }
-
 .wd-assignment-list-item {
-    border-left: 3px solid green !important;
+  border-left: 3px solid green !important;
 }
-
 .wd-assignment-editor-frame {
-    padding: 12px;
-    border-radius: 5px;
-    border: 1px solid lightgray;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
 }
 
-/* #wd-modules, #wd-modules-controls {
-    max-width: 800px;
-    margin-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 30px;
-} */
+
+
+
+

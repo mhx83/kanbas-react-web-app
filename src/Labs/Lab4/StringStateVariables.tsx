@@ -9,6 +9,4 @@ export default function StringStateVariables() {
         className="form-control"
         defaultValue={firstName}
         onChange={(e) => setFirstName(e.target.value)}/>
-      <hr/>
-    </div>
-);}
+      <hr/></div>);}
